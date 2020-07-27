@@ -1,0 +1,8 @@
+/* Media Queries */
+
+@media screen and (max-width: 768px){
+    #spotify{
+        flex-direction: column;
+        align-items: center;
+    }
+}

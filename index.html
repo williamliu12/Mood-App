@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/media.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600i,700,900&display=swap" rel="stylesheet">
+    <title>Mood App</title>
+</head>
+
+<body onload="realTimeClock()">
+    <div class="rain-animation"></div>
+    <div class="main-cont">
+        <div class="hello-text">Hello there</div>
+    </div>
+    <div class="clock-area">
+        <div class="clock-time" id="clock"></div>
+        <div id="clock2"></div>
+        <div id="clock3"></div>
+    </div>
+    <div class="date-area" id="date"></div>
+    <div class="choose">Choose a mood</div>
+    <div class="sound-picker">
+        <button class="happy-mood" data-sound="./images/UpForMeditationApp.mp3">
+            <img src="./svgs/happy.svg" alt="happy" />
+        </button>
+        <button class="chill-mood" data-sound="./images/RAINING IN ＯＳＡＫＡ (Lofi HipHop).mp3">
+            <img src="./svgs/chill.svg" alt="chill" />
+        </button>
+    </div>
+    <div class="player-container">
+        <audio class="song">
+            <source src="./images/UpForMeditationApp.mp3" type="audio/mp3" />
+        </audio>
+        <img src="./svgs/play.svg" alt="play" class="play" />
+    </div>
+    <div class="spotify-playlist" id = "spotify">
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/7EldHOVvOPJLmAYrDJJsip" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="spotify-playlist2" id = "spotify">
+        <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM&autoplay=1" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/0LNJD7Gntvr482Ru5E5E0i" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
