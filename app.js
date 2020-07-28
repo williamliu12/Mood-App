@@ -38,6 +38,7 @@ const app = () => {
 
     const song = document.querySelector('.song');
     const play = document.querySelector('.play');
+    const play2 = document.querySelector('.play2');
     const sounds = document.querySelectorAll('.sound-picker button');
     const happyMood = document.querySelector('.happy-mood');
     const chillMood = document.querySelector('.chill-mood');
@@ -51,7 +52,7 @@ const app = () => {
         sound.addEventListener('click', function(){
             song.src = this.getAttribute('data-sound');
             song.pause();
-            rainAnimation.style.animation = 'rain 1s linear infinite';
+            //rainAnimation.style.animation = 'rain 1s linear infinite';
             play.src = './svgs/play.svg';
         });
     });
@@ -61,14 +62,13 @@ const app = () => {
         document.body.style.backgroundImage = 'linear-gradient(#FFAB9B,white)';
         rainAnimation.style.display = 'none';
         playBtn.style.display = 'flex';
-        
     })
     chillMood.addEventListener('click', () =>{
         spotPlay2.style.display = 'flex';
         spotPlay.style.display = 'none';
         document.body.style.backgroundImage = 'linear-gradient(rgb(80, 127, 255),white)';
         rainAnimation.style.display = 'block';
-        playBtn.style.display = 'flex';
+        playBtn.style.display = 'flex'; 
     })
     
     //Play sound

@@ -18,6 +18,7 @@ html{
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    animation: fadeInDown 2s;
 }
 
 .clock-area{
@@ -26,6 +27,7 @@ html{
     font-size: 4em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    animation: fadeIn 5s;
 }
 
 .date-area{
@@ -34,6 +36,7 @@ html{
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    animation: fadeInUp 2s;
 }
 
 .choose{
@@ -43,37 +46,8 @@ html{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding: 1em;
+    animation: bounce 1s;
 }
-
-.mood-picker{
-    display: flex;
-    justify-content: space-between;
-    padding: 6em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-/* #buttons{
-    padding: 9px 25px;
-    border: 1px solid;
-    border-radius: 50px;
-    cursor: pointer;
-} */
-
-.hello-name{
-    display: flex;
-    justify-content: center;
-    font-size: 5em;
-    font-family: 'Kosugi Maru', sans-serif;
-    color: rgb(250, 167, 179);
-    animation: slide-in-top 3s;
-}
-
-/* .app{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
 
 .player-container{
     display: none;
@@ -87,51 +61,18 @@ html{
     padding: 2em;
 }
 
-/* .player-container svg{
-    position: absolute;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    pointer-events: none;
-} */
-
-/* video{
-    position: fixed;
-    top: 0%;
-    left:0%;
-    width: 100%;
-    z-index: -1;
-    height: auto;
-} */
-
-/* .sound-picker button{
-    color: black;
-    width: 30%;
-    height: 10%;
-    background: none;
-    border: 2px solid black;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 20px;
-    transition: all 0.5s ease;
-    
-} */
-
-.sound-picker button{
-    animation: slide-in-right 3s;
-}
-
 .sound-picker button{
     border: none;
     height: 120px;
     width: 120px;
     border-radius: 50%;
     padding:30px;
+    cursor: pointer;
 }
 
 .sound-picker button:nth-child(1){
     background: rgb(250, 167, 179);
+    /* background: #FFAB9B; */
 }
 
 .sound-picker button:nth-child(2){
@@ -142,43 +83,29 @@ html{
     height: 100%;
 }
 
+.happy-mood{
+    animation: fadeInTopLeft 2s;
+}
+.chill-mood{
+    animation: fadeInTopRight 2s;
+}
+
 .play{
     border: white 2px solid;
     border-radius: 50px;
     padding: 2em;
+    animation: fadeIn 3s;
+}
+.spotify-playlist{
+    animation: fadeInUp 2s;
+}
+
+.spotify-playlist2{
+    animation: fadeInUp 2s;
 }
 
 #spotify{
     display: none;
-    /* flex-direction: column; */
     justify-content: space-evenly;
     padding: 2em;
 }
-
-
-.rain-animation{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url(rain.png);
-    animation: rain 1s linear infinite;
-}
-
-@keyframes rain{
-    0%{
-        background-position: 0 0;
-    }
-    100%{
-        background-position: 20% 100%;
-    }
-}
-
-
-/* @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
-@-webkit-keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
-@-webkit-keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-left{0%{-webkit-transform:translateX(-1000px);transform:translateX(-1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
-@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}} */
