@@ -5,13 +5,9 @@
 }
 
 html{
-    overflow: visible;
-}
-
-body{
+    height: 100%;
     background-image: linear-gradient(#FFAB9B,white);
 }
-
 .main-cont{
     display: flex;
     justify-content: center;
@@ -57,12 +53,12 @@ body{
     font-weight: 400;
 }
 
-#buttons{
+/* #buttons{
     padding: 9px 25px;
     border: 1px solid;
     border-radius: 50px;
     cursor: pointer;
-}
+} */
 
 .hello-name{
     display: flex;
@@ -73,12 +69,11 @@ body{
     animation: slide-in-top 3s;
 }
 
-.app{
-    
+/* .app{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+} */
 
 .player-container{
     display: none;
@@ -92,25 +87,25 @@ body{
     padding: 2em;
 }
 
-.player-container svg{
+/* .player-container svg{
     position: absolute;
     height: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     pointer-events: none;
-}
+} */
 
-video{
+/* video{
     position: fixed;
     top: 0%;
     left:0%;
     width: 100%;
     z-index: -1;
     height: auto;
-}
+} */
 
-.sound-picker button{
+/* .sound-picker button{
     color: black;
     width: 30%;
     height: 10%;
@@ -121,7 +116,7 @@ video{
     font-size: 20px;
     transition: all 0.5s ease;
     
-}
+} */
 
 .sound-picker button{
     animation: slide-in-right 3s;

@@ -5,4 +5,7 @@
         flex-direction: column;
         align-items: center;
     }
+    .clock-area{
+        font-size: 3em;
+    }
 }
